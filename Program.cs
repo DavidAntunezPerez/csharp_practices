@@ -10,6 +10,12 @@ namespace PracticasDAP
     {
         static void Main(string[] args)
         {
+            Practica1();
+        }
+        #region Practica 1
+        static void Practica1()
+        {
+            Console.WriteLine("Práctica 1:");
             // get circle area from its radius
             Console.WriteLine("Introduzca un radio para el circulo: ");
             // int radius = Convert.ToInt32(Console.ReadLine()); // Another way of converting Int
@@ -17,5 +23,6 @@ namespace PracticasDAP
             double area = Math.Pow(radius, 2) * Math.PI;
             Console.WriteLine($"El area del circulo de {radius} cm es {area} cm^2");
         }
+        #endregion
     }
 }
