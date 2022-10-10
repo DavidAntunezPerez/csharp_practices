@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -30,6 +31,12 @@ namespace PracticasDAP
         #region Practica 2
         static void Practica2()
         {
+            //Modifica el ejemplo anterior para que cumpla lo siguiente:
+            // > Si no es mayor de edad, mostrará el mensaje que indica que no puede
+            // conducir.
+            // > Si es mayor de edad, mostrará el mensaje que pregunta si tiene carnet y lo
+            // comprobará, mostrando el mensaje correspondiente
+
             Console.WriteLine("DRIVING EVALUATION");
             Console.WriteLine("Please, type your age:");
             int age = int.Parse(Console.ReadLine());
