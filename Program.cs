@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,6 +30,30 @@ namespace PracticasDAP
         #region Practica 2
         static void Practica2()
         {
+            const int driving_age = 18;
+            const string has_license = "Y";
+
+            Console.WriteLine("DRIVING EVALUATION");
+            Console.WriteLine("Please, type your age:");
+            int age = int.Parse(Console.ReadLine());
+
+            if(age < driving_age)
+            {
+                Console.WriteLine("Sorry, you are too young to drive");
+            }
+            else
+            {
+                Console.WriteLine("Do you have driving license?(Y/N)");
+                string license = Console.ReadLine().ToUpper();
+                if (String.Equals(license, has_license))
+                {
+                    Console.WriteLine("You are able to drive");
+                }
+                else
+                {
+                    Console.WriteLine("You are not able to drive");
+                }
+            }
 
         }
         #endregion  
