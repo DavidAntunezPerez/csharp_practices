@@ -11,6 +11,7 @@ namespace PracticasDAP
         static void Main(string[] args)
         {
             Practica1();
+            Practica2();
         }
         #region Practica 1
         static void Practica1()
@@ -24,5 +25,12 @@ namespace PracticasDAP
             Console.WriteLine($"El area del circulo de {radius} cm es {area} cm^2");
         }
         #endregion
+
+        #region Practica 2
+        static void Practica2()
+        {
+
+        }
+        #endregion  
     }
 }
