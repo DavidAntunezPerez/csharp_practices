@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -14,6 +15,7 @@ namespace PracticasDAP
         {
             Practica1();
             Practica2();
+            Practica3();
         }
         #region Practica 1
         static void Practica1()
@@ -60,6 +62,33 @@ namespace PracticasDAP
             }
 
         }
-        #endregion  
+        #endregion
+
+        #region Practica 3
+        static void Practica3()
+        {
+            const string loop = "Y";
+            Console.WriteLine("Do you want to go inside the loop?(Y/N)");
+            string ans = Console.ReadLine().ToUpper();
+            switch (ans)
+            {
+                case "Y":
+                    while (String.Equals(ans, loop))
+                    {
+                        Console.WriteLine("Do you want to go inside the loop?(Y/N)");
+                        ans = Console.ReadLine().ToUpper();
+                    }
+                    break;
+                case "N":
+                    Console.WriteLine("You didnt went inside the loop.");
+                    break;
+                default:
+                    Console.WriteLine("Your answer must be Y or N!");
+                    break;
+            }
+            Console.WriteLine("You left the loop.");
+
+        }
+        #endregion
     }
 }
