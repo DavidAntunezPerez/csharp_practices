@@ -16,6 +16,7 @@ namespace PracticasDAP
             Practica1();
             Practica2();
             Practica3();
+            Practica4();
         }
         #region Practica 1
         static void Practica1()
@@ -92,6 +93,19 @@ namespace PracticasDAP
             Console.WriteLine("You left the loop.");
 
         }
+        #endregion
+
+        #region Practica 4
+        static void Practica4()
+        {
+            string ans= string.Empty;
+            do {
+                Console.WriteLine("Do you want to dive into the loop?");
+                ans = Console.ReadLine().ToUpper();
+            } while (!String.Equals(ans,"N"));
+            Console.WriteLine("You left the loop successfully.");
+        }
+
         #endregion
     }
 }
