@@ -13,10 +13,11 @@ namespace PracticasDAP
     {
         static void Main(string[] args)
         {
-            Practica1();
-            Practica2();
-            Practica3();
-            Practica4();
+            // Practica1();
+            // Practica2();
+            // Practica3();
+            // Practica4();
+            Practica5();
         }
         #region Practica 1
         static void Practica1()
@@ -107,5 +108,39 @@ namespace PracticasDAP
         }
 
         #endregion
+
+        #region Practica 5
+        static void Practica5()
+        {
+            const string PATH = @"C:\Users\antun\Downloads\practica5.txt";
+            System.IO.StreamReader file = null;
+                string line = string.Empty;
+
+            try
+            {
+                file = new System.IO.StreamReader(PATH);
+
+                line = file.ReadLine();
+                while (!String.IsNullOrEmpty(line))
+                {
+                    Console.WriteLine(line);
+                    line = file.ReadLine();
+                }
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                if(file != null)
+                {
+                    file.Close();
+                }
+                Console.WriteLine("File conection closed");
+            }
+        }
+        #endregion
+
     }
 }
